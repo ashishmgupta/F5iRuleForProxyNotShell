@@ -10,3 +10,6 @@
  1) The bad request would not even reach the exchange servers and rejected right at F5.
  2) Any enhancement to the regex can be applied here and that would protect all the exchange servers immediately 
  instead of potential change to the  url rewrite rule on each exchange servers.
+
+
+![image](https://user-images.githubusercontent.com/1037523/193436390-05ba7eff-5154-463a-9f43-f7c6ddb653fc.png)
