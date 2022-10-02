@@ -2,7 +2,7 @@
 # Ref : https://msrc-blog.microsoft.com/2022/09/29/customer-guidance-for-reported-zero-day-vulnerabilities-in-microsoft-exchange-server/
 # Below iRule when attached to the F5 load balancer VIP fronting exchange servers would drop any request matching the below regex ".*autodiscover\.json.*\@.*powershell.*"
 # This is similar to the URL rewrite rule applied to each exchange server but applied only at one place - the VIP fronting the exchange servers.
-# Advantages of using iRule is :
+# Advantages of using iRule are :
 # 1) The bad request would not even reach the exchange servers and rejected right at F5.
 # 2) Any enhancement to the regex can be applied here and that would protect all the exchange servers immediately 
 # instead of potential change to the url rewrite rule on each exchange servers.
