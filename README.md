@@ -12,4 +12,5 @@
  instead of potential change to the  url rewrite rule on each exchange servers.
 
 
-![image](https://user-images.githubusercontent.com/1037523/193436390-05ba7eff-5154-463a-9f43-f7c6ddb653fc.png)
+![image](https://user-images.githubusercontent.com/1037523/193436834-3d8c4990-5e04-4421-957b-4787f479be31.png)
+
