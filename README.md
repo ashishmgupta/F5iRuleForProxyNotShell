@@ -1,5 +1,5 @@
  Microsoft has provided a way to block the ProxyNotShell attacks by using the URL rewrite rules on each exchange server.
- Ref - https://msrc-blog.microsoft.com/2022/09/29/customer-guidance-for-reported-zero-day-vulnerabilities-in-microsoft-exchange-server/
+Ref - https://msrc-blog.microsoft.com/2022/09/29/customer-guidance-for-reported-zero-day-vulnerabilities-in-microsoft-exchange-server/
  
  But there is also an alternative way to block the ProxyNotShell attack by levaraging the iRules in F5.
  Since exchange servers are typically load balanced and requests go thorough the dedicated F5 VIP for exchange server, the same logic can be applied to block bad requests across all the exchange servers without making any changes on them.
