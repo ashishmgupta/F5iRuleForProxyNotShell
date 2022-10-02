@@ -2,7 +2,7 @@
  ref - https://msrc-blog.microsoft.com/2022/09/29/customer-guidance-for-reported-zero-day-vulnerabilities-in-microsoft-exchange-server/
  
  But there is also an alternative way to block the ProxyNotShell attack by levaraging the iRules in F5.
- Since exchange servers are typically load balanced and requests go thorough the dedicated F5 VIP for exchange server, the same logic can be applied to block bad requests.
+ Since exchange servers are typically load balanced and requests go thorough the dedicated F5 VIP for exchange server, the same logic can be applied to block bad requests across all the exchange servers without making any changes on them.
  
  iRule in this repository when attached to the F5 load balancer VIP fronting exchange servers would drop any request matching the below regex ".*autodiscover\.json.*\@.*powershell.*"
  This is similar to the URL rewrite rule applied to each exchange server but applied only at one place - the VIP fronting the exchange servers.
