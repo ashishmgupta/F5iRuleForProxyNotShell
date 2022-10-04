@@ -15,7 +15,7 @@ when RULE_INIT {
 }
 
 when HTTP_REQUEST { 
-    if {[string tolower [HTTP::uri]] matches_regex {.*autodiscover\.json.*\@.*powershell.*} } 
+    if {[string tolower [HTTP::uri]] matches_regex {.*autodiscover\.json.*Powershell.*} } 
     {
        # Uncomment the below log local0 line during testing to see the matching logs in your LTM 
        if { $static::proxynotshell_debug } 
